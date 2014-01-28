@@ -15,6 +15,11 @@ A simple example of uploading a file, this does all of the work of getting crede
     $client = new IronBox_Client($email, $password, 0, 'latest', 'application/json', true);
     $client->uploadFile($container_id, $file_path, $blob_name);
 
+# Requirements 
+
+PHP 5.something (have only tested and verified with 5.3)
+mcrypt for the encryption parts
+
 # License
 
 MIT OpenSourced license: http://opensource.org/licenses/MIT
